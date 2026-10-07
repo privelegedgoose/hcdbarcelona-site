@@ -1,0 +1,81 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Contact | HCD Barcelona</title>
+<meta name="description" content="Get in touch about AI adoption for your team, podcast guests or collaborations.">
+<meta property="og:title" content="Contact | HCD Barcelona">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://hcdbarcelona.com/contact/">
+<link rel="canonical" href="https://hcdbarcelona.com/contact/">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Archivo:wght@600;700;800&family=Fraunces:ital,wght@1,500&family=Inter:wght@400;600&display=swap" rel="stylesheet">
+<link rel="icon" type="image/png" href="../assets/img/favicon.png">
+<meta property="og:image" content="https://hcdbarcelona.com/assets/img/hcd-square.png">
+<link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+<header class="site-header"><div class="wrap">
+  <a class="brand" href="../">HCD <span>Barcelona</span></a>
+  <nav class="nav" aria-label="Main">
+    <a href="../consultancy/">Consultancy</a>
+    <a href="../podcast/">Podcast</a>
+    <a href="../about/">About</a>
+    <a href="../contact/">Contact</a>
+  </nav>
+</div></header>
+
+<main>
+<section class="hero"><div class="wrap">
+  <p class="eyebrow">Contact</p>
+  <h1>Let's <em>talk.</em></h1>
+  <p class="lede">Tell me about your team and how it works today, or write about the podcast. I read everything and reply within a few working days.</p>
+</div></section>
+
+<section class="band"><div class="wrap split">
+  <!-- TODO: replace data-endpoint with the Formspree/Web3Forms URL -->
+  <form id="contact-form" data-endpoint="TODO" method="post">
+    <label>Name <input name="name" required autocomplete="name"></label>
+    <label>Email <input type="email" name="email" required autocomplete="email"></label>
+    <label>What is this about?
+      <select name="topic">
+        <option>AI consultancy</option>
+        <option>Podcast: guest or collaboration</option>
+        <option>Something else</option>
+      </select>
+    </label>
+    <label>Message <textarea name="message" required></textarea></label>
+    <input class="hp" type="text" name="_gotcha" tabindex="-1" autocomplete="off" aria-hidden="true">
+    <button class="btn" type="submit">Send message</button>
+    <p class="note">I use your details only to reply to this message.</p>
+    <p class="status" id="form-status" role="status"></p>
+  </form>
+  <div>
+    <h2>Prefer another way?</h2>
+    <!-- TODO: add real email address and Calendly link -->
+    <p>Email: <a href="mailto:TODO@hcdbarcelona.com">TODO@hcdbarcelona.com</a></p>
+    <p><a href="https://ladaria.substack.com" rel="noopener">Newsletter on Substack</a><br>
+       <a href="https://www.instagram.com/hcdbarcelona" rel="noopener">Instagram @hcdbarcelona</a></p>
+  </div>
+</div></section>
+</main>
+
+<footer class="site-footer"><div class="wrap">
+  <div><strong>HCD Barcelona</strong><br><small>AI adoption and enablement specialist, journalist and host.</small></div>
+  <ul>
+    <li><a href="../consultancy/">Consultancy</a></li>
+    <li><a href="../podcast/">Podcast</a></li>
+    <li><a href="../about/">About</a></li>
+    <li><a href="../contact/">Contact</a></li>
+  </ul>
+  <ul>
+    <li><a href="https://ladaria.substack.com" rel="noopener">Newsletter</a></li>
+    <li><a href="https://www.instagram.com/hcdbarcelona" rel="noopener">Instagram</a></li>
+    <li><a href="https://www.youtube.com/@hcdbarcelona" rel="noopener">YouTube</a></li>
+  </ul>
+</div></footer>
+<script src="../js/main.js"></script>
+</body>
+</html>

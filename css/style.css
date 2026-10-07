@@ -112,6 +112,7 @@ section { padding: clamp(48px, 9vw, 104px) 0; }
 .logos { list-style: none; padding: 0; margin: 2.5rem 0 0; display: flex; flex-wrap: wrap; align-items: center; gap: 32px clamp(32px, 6vw, 72px); }
 .logos img { height: 56px; width: auto; max-width: 100%; filter: grayscale(1); opacity: .85; transition: filter .2s ease, opacity .2s ease; }
 .logos img[alt^="Universitat"] { height: 76px; }
+.logos img[alt="Product School"] { height: 96px; }
 .logos img:hover { filter: none; opacity: 1; }
 
 /* form */

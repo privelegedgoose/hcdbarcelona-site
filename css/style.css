@@ -106,6 +106,12 @@ section { padding: clamp(48px, 9vw, 104px) 0; }
 .episodes .meta { color: var(--brown); font-size: 0.9rem; font-weight: 600; }
 .episodes h3 { margin: .2rem 0 .4rem; }
 
+/* client logos */
+.logos { list-style: none; padding: 0; margin: 2.5rem 0 0; display: flex; flex-wrap: wrap; align-items: center; gap: 32px clamp(32px, 6vw, 72px); }
+.logos img { height: 56px; width: auto; max-width: 100%; filter: grayscale(1); opacity: .85; transition: filter .2s ease, opacity .2s ease; }
+.logos img[alt^="Universitat"] { height: 76px; }
+.logos img:hover { filter: none; opacity: 1; }
+
 /* form */
 form { display: grid; gap: 18px; max-width: 560px; }
 label { font-weight: 600; font-size: 0.95rem; display: grid; gap: 6px; }

@@ -40,7 +40,7 @@
     ev.preventDefault();
     var endpoint = form.getAttribute("data-endpoint");
     if (!endpoint || endpoint.indexOf("TODO") !== -1) {
-      status.textContent = "The form is not connected yet. Please email me instead.";
+      status.textContent = "The form is not connected yet. Please use the email address on this page instead.";
       return;
     }
     status.textContent = "Sending…";
@@ -49,8 +49,8 @@
       body: new FormData(form),
       headers: { Accept: "application/json" }
     }).then(function (r) {
-      if (r.ok) { form.reset(); status.textContent = "Thank you. I will reply within a few working days."; }
-      else { status.textContent = "Something went wrong. Please email me instead."; }
-    }).catch(function () { status.textContent = "Something went wrong. Please email me instead."; });
+      if (r.ok) { form.reset(); status.textContent = "Message sent. HCD Barcelona will reply within a few working days."; }
+      else { status.textContent = "Something went wrong. Please use the email address on this page instead."; }
+    }).catch(function () { status.textContent = "Something went wrong. Please use the email address on this page instead."; });
   });
 })();

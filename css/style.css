@@ -101,6 +101,8 @@ section { padding: clamp(48px, 9vw, 104px) 0; }
 
 /* podcast */
 .embed { aspect-ratio: 16 / 9; width: 100%; border: 0; border-radius: 14px; background: var(--black); }
+#latest { margin-top: 2rem; }
+#latest .meta { color: var(--brown); font-size: 0.9rem; font-weight: 600; margin: 1rem 0 .2rem; }
 .episodes { list-style: none; padding: 0; margin: 2rem 0 0; display: grid; gap: 16px; }
 .episodes li { padding: 20px 24px; border: 1px solid rgba(33,4,4,.14); border-radius: 14px; background: var(--paper); }
 .episodes .meta { color: var(--brown); font-size: 0.9rem; font-weight: 600; }

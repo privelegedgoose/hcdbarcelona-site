@@ -7,13 +7,11 @@
   });
 })();
 
-// Episodes (podcast page): latest episode embedded, earlier ones listed.
-// data/episodes.json is refreshed daily from the YouTube playlist by
-// .github/workflows/episodes.yml
+// Latest episode (podcast page), embedded from the YouTube playlist.
+// data/episodes.json is refreshed daily by .github/workflows/episodes.yml
 (function () {
-  var list = document.getElementById("episodes");
   var latest = document.getElementById("latest");
-  if (!list || !latest) return;
+  if (!latest) return;
 
   function el(tag, text, cls) {
     var n = document.createElement(tag);
@@ -21,42 +19,27 @@
     if (cls) n.className = cls;
     return n;
   }
-  function when(iso) {
-    return new Date(iso + "T00:00:00").toLocaleDateString("en-GB", { day: "numeric", month: "long", year: "numeric" });
-  }
 
   fetch("../data/episodes.json")
     .then(function (r) { return r.json(); })
     .then(function (eps) {
       if (!eps.length) return;
-      var first = eps[0];
+      var ep = eps[0];
+      var date = new Date(ep.date + "T00:00:00").toLocaleDateString("en-GB", { day: "numeric", month: "long", year: "numeric" });
 
       var frame = document.createElement("iframe");
       frame.className = "embed";
-      frame.src = "https://www.youtube-nocookie.com/embed/" + encodeURIComponent(first.id);
-      frame.title = first.title;
+      frame.src = "https://www.youtube-nocookie.com/embed/" + encodeURIComponent(ep.id);
+      frame.title = ep.title;
       frame.loading = "lazy";
       frame.allow = "accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share";
       frame.allowFullscreen = true;
-      latest.appendChild(frame);
-      latest.appendChild(el("p", when(first.date), "meta"));
-      latest.appendChild(el("h3", first.title));
-      if (first.summary) latest.appendChild(el("p", first.summary));
 
-      list.innerHTML = "";
-      var rest = eps.slice(1);
-      if (!rest.length) { list.remove(); return; }
-      rest.forEach(function (e) {
-        var li = document.createElement("li");
-        li.appendChild(el("div", when(e.date), "meta"));
-        var h = document.createElement("h3");
-        var a = document.createElement("a");
-        a.href = e.url; a.rel = "noopener"; a.textContent = e.title;
-        h.appendChild(a);
-        li.appendChild(h);
-        if (e.summary) li.appendChild(el("p", e.summary));
-        list.appendChild(li);
-      });
+      latest.innerHTML = "";
+      latest.appendChild(frame);
+      latest.appendChild(el("p", date, "meta"));
+      latest.appendChild(el("h3", ep.title));
+      if (ep.summary) latest.appendChild(el("p", ep.summary));
     })
     .catch(function () {});
 })();

@@ -93,6 +93,7 @@ section { padding: clamp(48px, 9vw, 104px) 0; }
 .band .card { background: var(--paper); }
 .dark .card { background: rgba(255,255,255,0.05); border-color: rgba(255,255,255,0.16); }
 .card .num { font-family: "Archivo", sans-serif; font-weight: 800; color: var(--red); font-size: 0.9rem; letter-spacing: .1em; }
+.grid.wide { grid-template-columns: repeat(auto-fit, minmax(min(100%, 420px), 1fr)); }
 .split { display: grid; gap: clamp(24px, 5vw, 64px); grid-template-columns: repeat(auto-fit, minmax(min(100%, 300px), 1fr)); align-items: start; }
 
 .pull { font-family: "Fraunces", Georgia, serif; font-style: italic; font-size: clamp(1.4rem, 3.4vw, 2.2rem); line-height: 1.25; max-width: 28em; }

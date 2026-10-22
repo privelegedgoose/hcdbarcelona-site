@@ -188,3 +188,5 @@ textarea { min-height: 150px; resize: vertical; }
 .steps li { counter-increment: s; border: 1px solid rgba(33, 4, 4, 0.25); border-radius: 999px; padding: 6px 14px; font-size: 0.88rem; font-weight: 600; }
 .steps li::before { content: counter(s) "  "; color: var(--red); font-family: "Archivo", sans-serif; font-weight: 800; }
 @media (max-width: 480px) { .bar-row { grid-template-columns: 62px 1fr 56px; gap: 8px; } }
+
+.steps.plain li::before { content: none; }

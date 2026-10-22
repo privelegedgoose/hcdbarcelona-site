@@ -15,13 +15,19 @@
 <link href="https://fonts.googleapis.com/css2?family=Archivo:wght@600;700;800&family=Fraunces:ital,wght@1,500&family=Inter:wght@400;600&display=swap" rel="stylesheet">
 <link rel="icon" type="image/png" href="../assets/img/favicon.png">
 <meta property="og:image" content="https://hcdbarcelona.com/assets/img/hcd-square.png">
-<link rel="stylesheet" href="../css/style.css?v=20261007m">
+<link rel="stylesheet" href="../css/style.css?v=20261007n">
 </head>
 <body>
 <header class="site-header"><div class="wrap">
   <a class="brand" href="../">HCD <span>Barcelona</span></a>
   <nav class="nav" aria-label="Main">
-    <a href="../consultancy/">Consultancy</a>
+    <div class="has-sub">
+      <a href="../consultancy/">Consultancy</a>
+      <div class="submenu"><div>
+        <a href="../consultancy/">Services &amp; pricing</a>
+        <a href="../consultancy/#case-studies">Case studies</a>
+      </div></div>
+    </div>
     <a href="../podcast/">Podcast</a>
     <a href="../about/">About</a>
     <a href="../contact/">Contact</a>
@@ -33,7 +39,7 @@
   <p class="eyebrow">Consultancy</p>
   <h1>AI adoption for teams that <em>are not</em> technical.</h1>
   <p class="lede">The HCD Barcelona consultancy works with content, education, marketing and communications teams that want to use AI well: knowing where it saves real time, where it creates risk, and where a person must stay in charge.</p>
-  <div class="actions"><a class="btn" href="../contact/">Book a free discovery call</a></div>
+  <div class="actions"><a class="btn" href="../contact/">Book a free discovery call</a><a class="btn ghost" href="#case-studies">See case studies</a></div>
 </div></section>
 
 <section class="band logos-band"><div class="wrap">
@@ -88,6 +94,81 @@
   </div>
 </div></section>
 
+<section class="band" id="case-studies"><div class="wrap">
+  <p class="eyebrow">Case studies</p>
+  <h2>Selected work, numbers first.</h2>
+  <p class="lede">Each case study leads with the result. Client names appear only where the work is public, and confidential engagements stay anonymous.</p>
+  <div class="grid wide cases">
+
+    <article class="card case">
+      <p class="tag">AI Workflow Pilot / Implementation Sprint</p>
+      <p class="metric">4 days <span class="arrow">→</span> 4 hours</p>
+      <p class="note">A core proposal workflow, 75–80% automated</p>
+      <h3>Product School: an enterprise proposal system</h3>
+      <div class="bars" role="img" aria-label="Time to produce a proposal fell from four days to four hours">
+        <div class="bar-row"><span class="bar-label">Before</span><span class="bar"><i class="was" style="width:100%"></i></span><span class="bar-val">4 days</span></div>
+        <div class="bar-row"><span class="bar-label">After</span><span class="bar"><i style="width:4.2%"></i></span><span class="bar-val">4 hours</span></div>
+      </div>
+      <p>Product School wrote enterprise training proposals and course outlines by hand, from scratch, every time. Over a six-week engagement in March and April 2026, Daria Gavrilova, brought in as AI Content Strategist, designed and architected a GitHub-backed application on the Claude API that generates personalised learning packages. A person reviews every output before it goes out. She then led the technical handoff to the developer and the stakeholder who would own the system.</p>
+    </article>
+
+    <article class="card case">
+      <p class="tag">AI Workflow Pilot / Implementation Sprint</p>
+      <p class="metric">29.4% <span class="arrow">→</span> 48%</p>
+      <p class="note">Patient adoption of a WhatsApp booking bot, month one to month two</p>
+      <h3>A London dental clinic: a WhatsApp booking and intake bot</h3>
+      <div class="bars" role="img" aria-label="Month one against month two: adoption 29.4 to 48 percent, booking conversion 45.3 to 54 percent, conversations handled without staff 56.9 to 68 percent">
+        <p class="bar-group">Adoption</p>
+        <div class="bar-row"><span class="bar-label">Month 1</span><span class="bar"><i class="was" style="width:29.4%"></i></span><span class="bar-val">29.4%</span></div>
+        <div class="bar-row"><span class="bar-label">Month 2</span><span class="bar"><i style="width:48%"></i></span><span class="bar-val">48%</span></div>
+        <p class="bar-group">Conversation to booking</p>
+        <div class="bar-row"><span class="bar-label">Month 1</span><span class="bar"><i class="was" style="width:45.3%"></i></span><span class="bar-val">45.3%</span></div>
+        <div class="bar-row"><span class="bar-label">Month 2</span><span class="bar"><i style="width:54%"></i></span><span class="bar-val">54%</span></div>
+        <p class="bar-group">Handled without staff</p>
+        <div class="bar-row"><span class="bar-label">Month 1</span><span class="bar"><i class="was" style="width:56.9%"></i></span><span class="bar-val">56.9%</span></div>
+        <div class="bar-row"><span class="bar-label">Month 2</span><span class="bar"><i style="width:68%"></i></span><span class="bar-val">68%</span></div>
+      </div>
+      <p>Daria Gavrilova co-led the rollout with a technical partner, owning the product decisions and the UK GDPR design: pseudonymisation, webhook security and the retention and deletion policy. Month-one adoption was lower than hoped, so the intake flow was tightened to cut question fatigue, reception promoted the channel more actively, and the link and QR code were made easier to find. The results were measured, not assumed.</p>
+    </article>
+
+    <article class="card case">
+      <p class="tag">AI Opportunity Diagnostic</p>
+      <p class="metric">300+ students</p>
+      <p class="note">Reached by AI-integrated courses built after a readiness assessment</p>
+      <h3>UAB Study Abroad: assess first, then design</h3>
+      <ol class="steps" aria-label="Process">
+        <li>Assess readiness</li><li>Prioritised roadmap</li><li>Design courses</li><li>Measure and iterate</li>
+      </ol>
+      <p>Before designing a single course, Daria Gavrilova assessed the programme's actual AI readiness across curriculum, faculty capability and governance. The findings became an AI-integration roadmap with prioritised use cases, sequencing and expected learning outcomes. The courses that followed, International Marketing Strategies and Career Management with AI, reached more than 300 international students, with assessment frameworks tying AI theory to measurable professional outcomes.</p>
+    </article>
+
+    <article class="card case">
+      <p class="tag">AI Adoption Workshop</p>
+      <p class="metric">6 of 6 built a prototype</p>
+      <p class="note">Cohort rating: 4.33 out of 5 for usefulness and for confidence to build with AI</p>
+      <h3>EAE Business School: a vibe-coding masterclass</h3>
+      <div class="bars" role="img" aria-label="Cohort rating of 4.33 out of 5 for usefulness and 4.33 out of 5 for confidence to build with AI">
+        <div class="bar-row"><span class="bar-label">Useful</span><span class="bar"><i style="width:86.6%"></i></span><span class="bar-val">4.33 / 5</span></div>
+        <div class="bar-row"><span class="bar-label">Confidence</span><span class="bar"><i style="width:86.6%"></i></span><span class="bar-val">4.33 / 5</span></div>
+      </div>
+      <p>EAE invited Daria Gavrilova to modernise a Global Master's residential week with AI. She designed and delivered a half-day, hands-on masterclass, "Vibe-Coding: building a landing page with AI", taking non-technical students from a one-line brief to a working prototype. Every student in the cohort of six built their own. The second rating measures what an adoption programme is for: whether people now believe they can build with AI.</p>
+    </article>
+
+    <article class="card case">
+      <p class="tag">Own project · AI Workflow Pilot in miniature</p>
+      <p class="metric">343 MB <span class="arrow">→</span> 87 MB</p>
+      <p class="note">A model moved into the browser when the planned hosting needed a paid tier</p>
+      <h3>A Barcelona recycling-sorting app</h3>
+      <div class="bars" role="img" aria-label="Model size fell from 343 megabytes to 87 megabytes">
+        <div class="bar-row"><span class="bar-label">Original</span><span class="bar"><i class="was" style="width:100%"></i></span><span class="bar-val">343 MB</span></div>
+        <div class="bar-row"><span class="bar-label">Quantised</span><span class="bar"><i style="width:25.4%"></i></span><span class="bar-val">87 MB</span></div>
+      </div>
+      <p>A fine-tuned Vision Transformer sorts a photo of an item into the right Barcelona recycling bin, with local edge cases built in and an honest "not sure" answer whenever confidence drops below 55%. When the planned hosting route turned out to need a paid tier, the model was exported to ONNX, quantised and moved entirely into the browser: no server, no hosting cost, and photos never leave the device. A side-by-side check on a test image showed the confidence within about 0.2 percentage points of the original. Tests on deliberately messy photos exposed a limitation, which was recorded rather than hidden. <a href="https://privelegedgoose.github.io/recycling-app/" target="_blank" rel="noopener">Try the app</a></p>
+    </article>
+
+  </div>
+</div></section>
+
 <section class="dark"><div class="wrap">
   <p class="eyebrow">Principles</p>
   <h2>How HCD Barcelona works</h2>
@@ -118,6 +199,6 @@
     <!-- TODO: add LinkedIn URL -->
   </ul>
 </div></footer>
-<script src="../js/main.js?v=20261007m"></script>
+<script src="../js/main.js?v=20261007n"></script>
 </body>
 </html>

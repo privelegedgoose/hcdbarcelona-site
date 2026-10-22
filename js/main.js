@@ -1,7 +1,7 @@
 // Mark the current nav link
 (function () {
   var path = location.pathname.replace(/index\.html$/, "");
-  document.querySelectorAll(".nav a").forEach(function (a) {
+  document.querySelectorAll(".nav > a, .nav > .has-sub > a").forEach(function (a) {
     var target = new URL(a.getAttribute("href"), location.href).pathname.replace(/index\.html$/, "");
     if (target === path) a.setAttribute("aria-current", "page");
   });

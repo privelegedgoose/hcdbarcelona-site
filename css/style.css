@@ -125,6 +125,9 @@ section { padding: clamp(48px, 9vw, 104px) 0; }
 .photo.portrait img { aspect-ratio: 4 / 5; object-fit: cover; object-position: center top; max-width: 420px; }
 
 /* client logos */
+.logos-band { padding: clamp(32px, 5vw, 56px) 0; text-align: center; }
+.logos-band .eyebrow { margin-bottom: 0; }
+.logos-band .logos { justify-content: center; margin-top: 1.75rem; }
 .logos { list-style: none; padding: 0; margin: 2.5rem 0 0; display: flex; flex-wrap: wrap; align-items: center; gap: 32px clamp(32px, 6vw, 72px); }
 .logos img { height: 56px; width: auto; max-width: 100%; filter: grayscale(1); opacity: .85; transition: filter .2s ease, opacity .2s ease; }
 .logos img[alt^="Universitat"] { height: 76px; }

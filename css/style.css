@@ -190,3 +190,9 @@ textarea { min-height: 150px; resize: vertical; }
 @media (max-width: 480px) { .bar-row { grid-template-columns: 62px 1fr 56px; gap: 8px; } }
 
 .steps.plain li::before { content: none; }
+
+/* stat row */
+.stats { display: grid; grid-template-columns: repeat(auto-fit, minmax(110px, 1fr)); gap: 14px; margin: 1.1rem 0 1.3rem; }
+.stats .stat { margin: 0; padding-top: 12px; border-top: 2px solid var(--red); }
+.stats .stat strong { display: block; font-family: "Archivo", sans-serif; font-weight: 800; font-size: clamp(1.7rem, 3.4vw, 2.2rem); line-height: 1; letter-spacing: -0.02em; }
+.stats .stat span { display: block; margin-top: .4rem; font-size: 0.82rem; line-height: 1.35; color: var(--brown); }

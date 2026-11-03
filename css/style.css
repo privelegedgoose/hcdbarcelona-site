@@ -196,3 +196,7 @@ textarea { min-height: 150px; resize: vertical; }
 .stats .stat { margin: 0; padding-top: 12px; border-top: 2px solid var(--red); }
 .stats .stat strong { display: block; font-family: "Archivo", sans-serif; font-weight: 800; font-size: clamp(1.7rem, 3.4vw, 2.2rem); line-height: 1; letter-spacing: -0.02em; }
 .stats .stat span { display: block; margin-top: .4rem; font-size: 0.82rem; line-height: 1.35; color: var(--brown); }
+
+/* promo video */
+.promo { margin: 2.25rem 0 0; max-width: 880px; }
+.promo video { display: block; width: 100%; height: auto; aspect-ratio: 16 / 9; border-radius: 14px; background: var(--black); }
